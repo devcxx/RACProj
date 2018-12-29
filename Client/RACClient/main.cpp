@@ -14,8 +14,8 @@ int main(int argc, char *argv[])
 
     QGuiApplication app(argc, argv);
 
-    QCoreApplication::setApplicationName("Audio Controller");
-    QCoreApplication::setOrganizationName("Nengxin Ltd., Co.");
+    QCoreApplication::setApplicationName("Remote Audio Controller");
+    QCoreApplication::setOrganizationName("Guangzhou Nengxin Cultural Technology Co., Ltd.");
     QCoreApplication::setOrganizationDomain("cn.com.nengxin");
 
     QQmlApplicationEngine engine;

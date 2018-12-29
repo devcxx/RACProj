@@ -21,7 +21,7 @@ Page {
     property var client
 
     header: Label {
-        text: qsTr("Audio Controller")
+        text: qsTr("Remote Audio Controller")
         font.pixelSize: Qt.application.font.pixelSize * 2
         padding: 10* Units.dp
     }

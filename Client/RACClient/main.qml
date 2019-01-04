@@ -24,7 +24,7 @@ ApplicationWindow {
         port: 1883
         username: "nengxin"
         password: "NX@)!*"
-
+//        keepAlive: 60000
         onConnected: {
             var topic = "/audiostate/" + keyVal;
             console.log(topic)
@@ -131,13 +131,15 @@ ApplicationWindow {
                 increaseVolume()
                 volumeDial.value += 5
             }
-            connectBtn.onClicked: {
-                client.connectToHost()
-                keyVal = keyEdit.text
-                settingValus.keyVal = keyVal
-
+            connectBtn.onCheckedChanged: {
+                if (connectBtn.checked) {
+                    client.connectToHost()
+                    keyVal = keyEdit.text
+                    settingValus.keyVal = keyVal
+                } else {
+                    client.disconnectFromHost()
+                }
             }
-
             client: client
         }
     }

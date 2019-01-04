@@ -136,6 +136,7 @@ Page {
 
     Button {
         id: connectBtn
+        checkable: true
         x: 250* Units.dp
         y: 10* Units.dp
         width: 100* Units.dp
